@@ -20,7 +20,12 @@ public class Main {
         int lowestTemp = 25;
         int highestTemp = isSummer ? 45 : 35;
 
-        return temp < highestTemp && temp > lowestTemp;
+        if(temp < highestTemp && temp > lowestTemp){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public static double area(double width, double height) {
